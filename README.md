@@ -1,4 +1,4 @@
-# Indic-Diffusion-TTS
+# Fast Indic TTS — Diff-Turbo + Indic-Prosody
 
 Two research-grade systems spanning the full Text-to-Speech stack — from an
 LLM **linguistic front-end** (what sounds to make) down to a GPU-kernel
