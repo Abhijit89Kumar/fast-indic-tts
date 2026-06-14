@@ -4,8 +4,8 @@ llm_normalizer.py
 LLM-driven Text-Normalization (TN) front-end for code-mixed Indic TTS, built on
 **Sarvam-1 (2B)** (`sarvamai/sarvam-1`).
 
-IMPORTANT DESIGN NOTE (and a key interview talking point)
----------------------------------------------------------
+Design note
+-----------
 `sarvam-1` is a *base* (pretraining) decoder LM — NOT instruction-tuned. Verbose
 "You are a deterministic TN engine ..." system prompts do NOT work: the model
 ignores the instructions and emits garbled text. The correct lever for a base

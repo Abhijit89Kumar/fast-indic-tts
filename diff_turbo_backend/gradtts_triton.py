@@ -19,7 +19,7 @@ What this does:
 Run (on the A100 pod, from the diff_turbo_backend dir):
     python gradtts_triton.py --gradtts /path/Grad-TTS --timesteps 50
 
-Honest scope note: we fuse the bandwidth-bound element-wise ops (Mish, SDE step)
+Scope note: we fuse the bandwidth-bound element-wise ops (Mish, SDE step)
 and leave the compute-bound Conv2d/GroupNorm/attention on cuDNN. The end-to-end
 speedup is therefore bounded by how much of the wall-clock those element-wise ops
 represent (reported faithfully below).

@@ -6,9 +6,9 @@ synthesis wall-clock is actually the bandwidth-bound element-wise work our
 Triton kernels target (Mish + the SDE Euler step) vs the compute-bound
 Conv2d / GroupNorm / attention?
 
-This is the honest scientific backbone of Project 1: it explains WHY fusing the
-element-wise ops yields a large *kernel-level* speedup (see benchmark.py) but a
-small *end-to-end* speedup in this particular model — the U-Net is compute-bound.
+It explains why fusing the element-wise ops yields a large kernel-level speedup
+(see benchmark.py) but a small end-to-end speedup in this model: the U-Net is
+compute-bound, dominated by attention.
 
 Run (on the pod):
     python profile_gradtts.py --gradtts /path/Grad-TTS --timesteps 50

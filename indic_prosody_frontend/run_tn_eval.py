@@ -57,7 +57,7 @@ def print_corpus_table(by_system: dict) -> None:
 
 def print_category_table(cat_metrics: dict, systems: list) -> None:
     print("\n" + "=" * 72)
-    print("PER-CATEGORY WER (%)  — where the LLM earns its keep")
+    print("PER-CATEGORY WER (%)")
     print("=" * 72)
     cats = sorted({c for s in systems for c in cat_metrics[s]})
     header = f"  {'category':24s}" + "".join(f"{s:>13s}" for s in systems)

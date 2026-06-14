@@ -3,7 +3,7 @@ baseline_rules.py
 =================
 Rule-based Text-Normalization (TN) baselines for the Indic-Prosody front-end.
 
-We provide TWO baselines so the LLM comparison is honest:
+We provide TWO baselines so the LLM comparison is fair:
 
   1. `naive_normalize`      — the textbook indic-numtowords path: strip non-digits,
                               expand the integer. Breaks on almost everything.

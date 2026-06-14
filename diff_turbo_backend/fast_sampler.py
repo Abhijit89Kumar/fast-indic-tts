@@ -1,20 +1,18 @@
 """
 fast_sampler.py
 ===============
-The headline result of Diff-Turbo: a REAL, large, honest end-to-end speedup of
-Grad-TTS synthesis by attacking the actual bottleneck the profiler revealed.
+Reduces Grad-TTS synthesis latency by cutting the number of function
+evaluations (NFE) — the bottleneck identified by profile_gradtts.py.
 
-KEY INSIGHT (from profile_gradtts.py): the reverse loop is dominated not by
-element-wise ops but by running the U-Net `n_timesteps` (=50) times — it is
-NFE-bound (number of function evaluations). Grad-TTS ships a 1st-order Euler
-solver for the probability-flow ODE. We instead implement a 2nd-order **Heun**
-solver (the EDM/Karras integrator), which reaches the same mel quality in far
-fewer function evaluations -> real wall-clock speedup. On top, the fused Triton
-Mish kernel shaves the per-evaluation cost.
+The reverse loop is dominated by running the U-Net `n_timesteps` (=50) times,
+not by element-wise ops, so it is NFE-bound. Grad-TTS ships a 1st-order Euler
+solver for the probability-flow ODE; this module adds a 2nd-order Heun solver
+(the EDM/Karras integrator), which reaches comparable mel quality in fewer
+evaluations. The fused Triton Mish kernel additionally reduces per-evaluation
+cost.
 
-We quantify everything against a high-NFE reference (Euler-200) using mel L1
-(MAE), and report latency for every operating point so the quality/speed
-trade-off is explicit and defensible.
+Each operating point is scored against a high-NFE reference (Euler-200) with
+mel L1 (MAE) and timed, so the quality/latency trade-off is explicit.
 
 Reverse probability-flow ODE for Grad-TTS (deterministic, stoc=False):
     dx/dt = -0.5 * beta(t) * (mu - x - score(x, t))            ... (f)

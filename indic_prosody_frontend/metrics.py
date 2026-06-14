@@ -2,8 +2,7 @@
 metrics.py
 ==========
 Evaluation metrics for Text Normalization quality. Pure-Python (no GPU / deps),
-so it runs anywhere and is trivially auditable — important because these are the
-numbers that go on the CV and get defended in the interview.
+so it runs anywhere and is easy to audit.
 
 We report, against the hand-authored gold spoken-form:
   * WER  — Word Error Rate   (edit distance over whitespace tokens / #gold words)

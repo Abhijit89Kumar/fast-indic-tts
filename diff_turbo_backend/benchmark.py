@@ -14,7 +14,7 @@ Latency + VRAM benchmark for the Diff-Turbo back-end. Two views:
       once the audio is long enough (T >= ~1024 frames) that the element-wise
       traffic stops being a rounding error next to the convs. At very short T
       the block is conv-bound and fusion can even be net-negative — we report
-      it honestly rather than cherry-picking.
+      it directly rather than only reporting the favourable size.
 
 All timings use CUDA events with warmup; VRAM via max_memory_allocated.
 
