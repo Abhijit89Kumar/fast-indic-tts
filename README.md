@@ -8,6 +8,11 @@ inference via a higher-order solver and fused Triton kernels).
 All numbers below were measured on an NVIDIA A100-SXM4-80GB (PyTorch 2.8 /
 CUDA 12.8, Triton 3.4) and are reproducible from the scripts in this repo.
 
+**Live demo (chains both halves):** https://huggingface.co/spaces/AK04-IXR/fast-indic-tts
+— type code-mixed text, see the normalized form and phonemes, and synthesize
+audio with a selectable diffusion-step count. (Free CPU Space, so a run takes a
+little while.)
+
 | Component | What it does | Result |
 |---|---|---|
 | [`indic_prosody_frontend`](indic_prosody_frontend) | Sarvam-1 LoRA for TN + G2P | TN word-error **20.9% → 7.96%** vs a competitive rule engine |
