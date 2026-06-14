@@ -1,0 +1,133 @@
+{
+  "eager": [
+    {
+      "sampler": "euler",
+      "nfe": 4,
+      "mel_mae": 0.22828949987888336,
+      "latency_ms": 83.10297393798828
+    },
+    {
+      "sampler": "euler",
+      "nfe": 8,
+      "mel_mae": 0.10861022025346756,
+      "latency_ms": 166.1300506591797
+    },
+    {
+      "sampler": "euler",
+      "nfe": 16,
+      "mel_mae": 0.04474101588129997,
+      "latency_ms": 331.61419677734375
+    },
+    {
+      "sampler": "euler",
+      "nfe": 25,
+      "mel_mae": 0.024859661236405373,
+      "latency_ms": 518.1405029296875
+    },
+    {
+      "sampler": "euler",
+      "nfe": 50,
+      "mel_mae": 0.010131423361599445,
+      "latency_ms": 1035.7578125
+    },
+    {
+      "sampler": "heun",
+      "nfe": 4,
+      "mel_mae": 0.28772857785224915,
+      "latency_ms": 62.42230224609375
+    },
+    {
+      "sampler": "heun",
+      "nfe": 8,
+      "mel_mae": 0.08283862471580505,
+      "latency_ms": 145.38613891601562
+    },
+    {
+      "sampler": "heun",
+      "nfe": 16,
+      "mel_mae": 0.04424481838941574,
+      "latency_ms": 310.95501708984375
+    },
+    {
+      "sampler": "heun",
+      "nfe": 24,
+      "mel_mae": 0.03116029128432274,
+      "latency_ms": 476.6888427734375
+    },
+    {
+      "sampler": "heun",
+      "nfe": 32,
+      "mel_mae": 0.02275846153497696,
+      "latency_ms": 642.2814331054688
+    }
+  ],
+  "fused": [
+    {
+      "sampler": "euler",
+      "nfe": 4,
+      "mel_mae": 0.2282756119966507,
+      "latency_ms": 81.64201354980469
+    },
+    {
+      "sampler": "euler",
+      "nfe": 8,
+      "mel_mae": 0.10862073302268982,
+      "latency_ms": 162.62889099121094
+    },
+    {
+      "sampler": "euler",
+      "nfe": 16,
+      "mel_mae": 0.04472104832530022,
+      "latency_ms": 325.1309509277344
+    },
+    {
+      "sampler": "euler",
+      "nfe": 25,
+      "mel_mae": 0.02485606074333191,
+      "latency_ms": 507.940185546875
+    },
+    {
+      "sampler": "euler",
+      "nfe": 50,
+      "mel_mae": 0.010136989876627922,
+      "latency_ms": 1015.3829956054688
+    },
+    {
+      "sampler": "heun",
+      "nfe": 4,
+      "mel_mae": 0.2877131998538971,
+      "latency_ms": 61.26496124267578
+    },
+    {
+      "sampler": "heun",
+      "nfe": 8,
+      "mel_mae": 0.08285725861787796,
+      "latency_ms": 142.53721618652344
+    },
+    {
+      "sampler": "heun",
+      "nfe": 16,
+      "mel_mae": 0.04424188658595085,
+      "latency_ms": 304.86614990234375
+    },
+    {
+      "sampler": "heun",
+      "nfe": 24,
+      "mel_mae": 0.03116099163889885,
+      "latency_ms": 467.119384765625
+    },
+    {
+      "sampler": "heun",
+      "nfe": 32,
+      "mel_mae": 0.02276030369102955,
+      "latency_ms": 629.5771484375
+    }
+  ],
+  "euler50_ms": 1035.7578125,
+  "headline": {
+    "sampler": "euler",
+    "nfe": 50,
+    "mel_mae": 0.010136989876627922,
+    "latency_ms": 1015.3829956054688
+  }
+}
