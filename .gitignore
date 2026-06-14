@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Trained LoRA adapters live on the Hugging Face Hub, not in git (see README).
+sarvam_tn_lora/
+sarvam_g2p_lora/
+*.safetensors
+
+# Logs / scratch
+*.log
+trace.json
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,21 @@
+# =============================================================================
+# Indic-Diffusion-TTS  —  unified requirements
+# =============================================================================
+# Two sub-systems share this environment:
+#   * diff_turbo_backend      -> GPU kernel fusion (PyTorch + Triton)
+#   * indic_prosody_frontend  -> LLM text-normalization (Transformers)
+#
+# NOTE on Triton + Windows:
+#   The upstream `triton` wheel is Linux-only. On Windows install the community
+#   `triton-windows` build instead:  `pip install triton-windows`.
+#   The kernels in this repo are standard @triton.jit and run unmodified on both.
+# =============================================================================
+
+torch>=2.1.0
+torchaudio>=2.1.0
+triton>=2.1.0            # on Windows: replace with `triton-windows`
+transformers>=4.40.0
+accelerate>=0.29.0
+librosa>=0.10.0
+matplotlib>=3.7.0
+indic-numtowords>=1.0.0
