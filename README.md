@@ -153,14 +153,14 @@ sampler exploits.
 ## Pretrained adapters (Hugging Face)
 The LoRA adapters are hosted on the Hub and gitignored here to keep the repo
 light. Load them on top of `sarvamai/sarvam-1`:
-- TN: [`Abhijit89Kumar/sarvam1-hinglish-tn-lora`](https://huggingface.co/Abhijit89Kumar/sarvam1-hinglish-tn-lora)
-- G2P: [`Abhijit89Kumar/sarvam1-hinglish-g2p-lora`](https://huggingface.co/Abhijit89Kumar/sarvam1-hinglish-g2p-lora)
+- TN: [`AK04-IXR/sarvam1-hinglish-tn-lora`](https://huggingface.co/AK04-IXR/sarvam1-hinglish-tn-lora)
+- G2P: [`AK04-IXR/sarvam1-hinglish-g2p-lora`](https://huggingface.co/AK04-IXR/sarvam1-hinglish-g2p-lora)
 
 ```python
 from peft import PeftModel
 from transformers import AutoModelForCausalLM
 m = AutoModelForCausalLM.from_pretrained("sarvamai/sarvam-1")
-m = PeftModel.from_pretrained(m, "Abhijit89Kumar/sarvam1-hinglish-tn-lora")
+m = PeftModel.from_pretrained(m, "AK04-IXR/sarvam1-hinglish-tn-lora")
 ```
 
 ## Reproduce
