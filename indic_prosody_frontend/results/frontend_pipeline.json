@@ -1,0 +1,20 @@
+[
+  {
+    "raw": "Mera flight ticket PNR-8392 hai, aur departure 4:30 PM ko hai.",
+    "normalized": "Mera flight ticket pee-en-aar eight three nine two hai, aur departure four thirty pee-em ko hai.",
+    "ipa_sarvam": "miəɹə flɪit tɪkɪt piːɛnɑːɹ eɪt θɹiː naɪn tuː haɪ, ɔːɹ dɛpɹəlɚ foːɹ θɜːɾi piːɛm koʊ haɪ",
+    "ipa_espeak": "miəɹə flaɪt tɪkɪt piːɛnɑːɹ eɪt θɹiː naɪn tuː haɪ ɔːɹ dᵻpɑːɹtʃɚ foːɹ θɜːɾi piːɛm koʊ haɪ"
+  },
+  {
+    "raw": "IRCTC se ticket book karo, fare Rs 1250 hai.",
+    "normalized": "aai-aar-see-tee-see se ticket book karo, fare twelve hundred fifty rupees hai.",
+    "ipa_sarvam": "ɑːiɑːɹsiːtiːsiː siː tɪkɪt bʌk kɑːɹoʊ fɑːɹɾi twɛlv hʌndɹɪd fɪfti ɹuːpiːz haɪ",
+    "ipa_espeak": "ɑːiɑːɹsiːtiːsiː siː tɪkɪt bʊk kæɹoʊ fɛɹ twɛlv hʌndɹɪd fɪfti ɹuːpiːz haɪ"
+  },
+  {
+    "raw": "Meeting 9:05 AM par hai, 3rd floor conference room mein.",
+    "normalized": "Meeting nine oh five ay-em par hai, third floor conference room mein.",
+    "ipa_sarvam": "miːɾɪŋ naɪn oʊ faɪv aɪɛm pɑːɹ haɪ, θɜːd fɔːɹlə foːɹ kənfɛsɹəm ɹoʊɹ meɪn",
+    "ipa_espeak": "miːɾɪŋ naɪn oʊ faɪv aɪɛm pɑːɹ haɪ θɜːd floːɹ kɑːnfɹəns ɹuːm meɪn"
+  }
+]

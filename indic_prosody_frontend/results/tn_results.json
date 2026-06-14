@@ -1,0 +1,402 @@
+[
+  {
+    "id": 1,
+    "category": "id+time",
+    "input": "Mera flight ticket PNR-8392 hai, aur departure 4:30 PM ko hai.",
+    "gold": "Mera flight ticket pee-en-aar eight three nine two hai, aur departure four thirty pee-em ko hai.",
+    "naive": "Mera flight ticket आठ हज़ार तीन सौ बानवे hai, aur departure चार सौ तीस PM ko hai.",
+    "competitive": "Mera flight ticket PNR-eight thousand three hundred ninety two hai, aur departure four thirty pee-em ko hai.",
+    "sarvam_fewshot": "mera flight ticket PNR-eight hundred thirty two hai, aur departure forty three pm ko hai.",
+    "sarvam_lora": "Mera flight ticket pee-en-aar eight three nine two hai, aur departure four thirty pee-em ko hai."
+  },
+  {
+    "id": 2,
+    "category": "acronym+currency",
+    "input": "IRCTC se ticket book karo, fare Rs 1250 hai.",
+    "gold": "aai-aar-see-tee-see se ticket book karo, fare one thousand two hundred fifty rupees hai.",
+    "naive": "IRCTC se ticket book karo, fare Rs एक हज़ार दो सौ पचास hai.",
+    "competitive": "IRCTC se ticket book karo, fare one thousand two hundred fifty rupeeshai.",
+    "sarvam_fewshot": "ir-ee-tsee ke ticket book karo, faare do hundred fifty rupay hai.",
+    "sarvam_lora": "aai-aar-see-tee-see se ticket book karo, fare twelve hundred fifty rupees hai."
+  },
+  {
+    "id": 3,
+    "category": "otp+id",
+    "input": "Mera OTP 4521 hai aur account number 99887766 hai.",
+    "gold": "Mera oh-tee-pee four five two one hai aur account number nine nine eight eight seven seven six six hai.",
+    "naive": "Mera OTP चार हज़ार पाँच सौ इक्कीस hai aur account number नौ करोड़ अट्ठानवे लाख सत्तासी हज़ार सात सौ छयासठ hai.",
+    "competitive": "Mera OTP four thousand five hundred twenty one hai aur account number nine crore ninety eight lakh eighty seven thousand seven hundred sixty six hai.",
+    "sarvam_fewshot": "mera otp four fifty two one is aai and account number nine ninety eight eighty seven six hai.",
+    "sarvam_lora": "Mera oh-tee-pee four five two one hai aur account number nine nine eight eight seven seven six six hai."
+  },
+  {
+    "id": 4,
+    "category": "time+ordinal",
+    "input": "Meeting 9:05 AM par hai, 3rd floor conference room mein.",
+    "gold": "Meeting nine oh five ay-em par hai, third floor conference room mein.",
+    "naive": "Meeting नौ सौ पाँच AM par hai, तीन floor conference room mein.",
+    "competitive": "Meeting nine oh five ay-em par hai, third floor conference room mein.",
+    "sarvam_fewshot": "muh-tehn ek ohtti ay-fifty ay-phee-em par hai, tee-three foor dee-vizee confer-shun room mein.",
+    "sarvam_lora": "Meeting nine oh five ay-em par hai, third floor conference room mein."
+  },
+  {
+    "id": 5,
+    "category": "acronym+decimal",
+    "input": "COVID-19 ke baad temperature 37.5 degree tak gaya.",
+    "gold": "kovid nineteen ke baad temperature thirty seven point five degree tak gaya.",
+    "naive": "उन्नीस ke baad temperature तीन सौ पचहत्तर degree tak gaya.",
+    "competitive": "COVID-nineteen ke baad temperature thirty seven point five degree tak gaya.",
+    "sarvam_fewshot": "covid-one-ees ke baad temperature thirty seven point five degrees tak gaya.",
+    "sarvam_lora": "kovid-19 ke baad temperature thirty seven point five degree tak gaya."
+  },
+  {
+    "id": 6,
+    "category": "currency-lakh",
+    "input": "Is ghar ki keemat Rs 45 lakh hai.",
+    "gold": "Is ghar ki keemat forty five lakh rupees hai.",
+    "naive": "Is ghar ki keemat Rs पैंतालीस lakh hai.",
+    "competitive": "Is ghar ki keemat forty five lakh rupees hai.",
+    "sarvam_fewshot": "is ghar ki keemat forty five lakh rupees hai.",
+    "sarvam_lora": "Is ghar ki keemat forty five lakh rupees hai."
+  },
+  {
+    "id": 7,
+    "category": "currency-symbol-crore",
+    "input": "Company ne ₹2.5 crore ka profit kamaaya.",
+    "gold": "Company ne two point five crore rupees ka profit kamaaya.",
+    "naive": "Company ne पच्चीस crore ka profit kamaaya.",
+    "competitive": "Company ne two point five crore rupees ka profit kamaaya.",
+    "sarvam_fewshot": "company eh-ee-se do point five kro-ree-mee profite kamaya.",
+    "sarvam_lora": "Company ne two point five crore rupees ka profit kamaaya."
+  },
+  {
+    "id": 8,
+    "category": "phone",
+    "input": "Mujhe 98765-43210 par call karo.",
+    "gold": "Mujhe nine eight seven six five four three two one zero par call karo.",
+    "naive": "Mujhe 98765-43210 par call karo.",
+    "competitive": "Mujhe ninety eight thousand seven hundred sixty five-forty three thousand two hundred ten par call karo.",
+    "sarvam_fewshot": "mujhe nine eight seven six five four three two one oh teen par call karo.",
+    "sarvam_lora": "Mujhe nine eight seven six five four three two one zero par call karo."
+  },
+  {
+    "id": 9,
+    "category": "percent",
+    "input": "Exam mein usne 92% marks scored kiye.",
+    "gold": "Exam mein usne ninety two percent marks scored kiye.",
+    "naive": "Exam mein usne बानवे marks scored kiye.",
+    "competitive": "Exam mein usne ninety two percent marks scored kiye.",
+    "sarvam_fewshot": "ex-am mein usne ninety two percent marks scored kiye.",
+    "sarvam_lora": "Exam mein usne ninety two percent marks scored kiye."
+  },
+  {
+    "id": 10,
+    "category": "date-slash",
+    "input": "Meri appointment 15/08/2024 ko hai.",
+    "gold": "Meri appointment fifteenth August twenty twenty four ko hai.",
+    "naive": "Meri appointment एक करोड़ पचास लाख बयासी हज़ार चौबीस ko hai.",
+    "competitive": "Meri appointment fifteen/eight/two thousand twenty four ko hai.",
+    "sarvam_fewshot": "meri appointment fifteen oh-ee-bais ekuly december ko hai.",
+    "sarvam_lora": "Meri appointment fifteenth August twenty twenty four ko hai."
+  },
+  {
+    "id": 11,
+    "category": "year",
+    "input": "India 1947 mein azaad hua tha.",
+    "gold": "India nineteen forty seven mein azaad hua tha.",
+    "naive": "India एक हज़ार नौ सौ सैंतालीस mein azaad hua tha.",
+    "competitive": "India one thousand nine hundred forty seven mein azaad hua tha.",
+    "sarvam_fewshot": "india ek nineteen forty seven mein azad hua tha.",
+    "sarvam_lora": "India nineteen forty seven mein azaad hua tha."
+  },
+  {
+    "id": 12,
+    "category": "units-distance",
+    "input": "Office ghar se 12.5 km door hai.",
+    "gold": "Office ghar se twelve point five kilometre door hai.",
+    "naive": "Office ghar se एक सौ पच्चीस km door hai.",
+    "competitive": "Office ghar se twelve point five km door hai.",
+    "sarvam_fewshot": "office house from twelve point five kilometers away.",
+    "sarvam_lora": "Office ghar se twelve point five kilometre door hai."
+  },
+  {
+    "id": 13,
+    "category": "units-weight",
+    "input": "Mujhe 2 kg aaloo aur 500 g pyaaz chahiye.",
+    "gold": "Mujhe two kilogram aaloo aur five hundred gram pyaaz chahiye.",
+    "naive": "Mujhe दो kg aaloo aur पाँच सौ g pyaaz chahiye.",
+    "competitive": "Mujhe two kg aaloo aur five hundred g pyaaz chahiye.",
+    "sarvam_fewshot": "mujhe do kilo aloo aani pyaaz chaahiye.",
+    "sarvam_lora": "Mujhe two kilogram aaloo aur five hundred gram pyaaz chahiye."
+  },
+  {
+    "id": 14,
+    "category": "range",
+    "input": "Delivery 10-15 din mein ho jaayegi.",
+    "gold": "Delivery ten to fifteen din mein ho jaayegi.",
+    "naive": "Delivery एक हज़ार पंद्रह din mein ho jaayegi.",
+    "competitive": "Delivery ten-fifteen din mein ho jaayegi.",
+    "sarvam_fewshot": "delivery ten fifteen day mein hogi.",
+    "sarvam_lora": "Delivery ten fifteen days mein ho jaayegi."
+  },
+  {
+    "id": 15,
+    "category": "time-24h",
+    "input": "Train 18:30 baje platform 4 se chalegi.",
+    "gold": "Train eighteen thirty baje platform four se chalegi.",
+    "naive": "Train एक हज़ार आठ सौ तीस baje platform चार se chalegi.",
+    "competitive": "Train eighteen thirtybaje platform four se chalegi.",
+    "sarvam_fewshot": "train eighteen thirty pee-em from platform four will go.",
+    "sarvam_lora": "Train eighteen thirty baje platform four se chalegi."
+  },
+  {
+    "id": 16,
+    "category": "fraction",
+    "input": "Recipe mein 1/2 cup sugar daalo.",
+    "gold": "Recipe mein half cup sugar daalo.",
+    "naive": "Recipe mein बारह cup sugar daalo.",
+    "competitive": "Recipe mein one/two cup sugar daalo.",
+    "sarvam_fewshot": "recipe mein eh-vee-tupp de-lo.",
+    "sarvam_lora": "Recipe mein one half cup sugar daalo."
+  },
+  {
+    "id": 17,
+    "category": "acronym-finance",
+    "input": "RBI ne repo rate 6.5% rakha hai.",
+    "gold": "aar-bee-aai ne repo rate six point five percent rakha hai.",
+    "naive": "RBI ne repo rate पैंसठ rakha hai.",
+    "competitive": "RBI ne repo rate six point five percent rakha hai.",
+    "sarvam_fewshot": "ees-bee-ray ke reepo rate saat point five percent rakha hai.",
+    "sarvam_lora": "aar-bee-aai ne repo rate six point five percent rakha hai."
+  },
+  {
+    "id": 18,
+    "category": "upi-id",
+    "input": "Payment UPI se karo, amount Rs 350 hai.",
+    "gold": "Payment yoo-pee-aai se karo, amount three hundred fifty rupees hai.",
+    "naive": "Payment UPI se karo, amount Rs तीन सौ पचास hai.",
+    "competitive": "Payment UPI se karo, amount three hundred fifty rupeeshai.",
+    "sarvam_fewshot": "pay-me-tu-ee un-pi-se karo, amout rs thirty five hundred is.",
+    "sarvam_lora": "Payment yoo-pee-aai se karo, amount thirty five rupees hai."
+  },
+  {
+    "id": 19,
+    "category": "devanagari-mix",
+    "input": "मेरी सैलरी 50000 रुपये प्रति माह है।",
+    "gold": "मेरी सैलरी fifty thousand रुपये प्रति माह है।",
+    "naive": "मेरी सैलरी पचास हज़ार रुपये प्रति माह है।",
+    "competitive": "मेरी सैलरी fifty thousand रुपये प्रति माह है।",
+    "sarvam_fewshot": "my-see-es salary fifty hundred per month is.",
+    "sarvam_lora": "मेरी सैलरी fifty thousand रुपये प्रति माह है।"
+  },
+  {
+    "id": 20,
+    "category": "model-number",
+    "input": "Maine naya iPhone 15 Pro Max liya hai.",
+    "gold": "Maine naya iPhone fifteen Pro Max liya hai.",
+    "naive": "Maine naya iPhone पंद्रह Pro Max liya hai.",
+    "competitive": "Maine naya iPhone fifteen Pro Max liya hai.",
+    "sarvam_fewshot": "maine new iphone fifteen pro max liya hai.",
+    "sarvam_lora": "Maine naya iPhone fifteen Pro Max liya hai."
+  },
+  {
+    "id": 21,
+    "category": "score-ratio",
+    "input": "Match mein India ne 287/4 banaaye.",
+    "gold": "Match mein India ne two hundred eighty seven for four banaaye.",
+    "naive": "Match mein India ne दो हज़ार आठ सौ चौहत्तर banaaye.",
+    "competitive": "Match mein India ne two hundred eighty seven/four banaaye.",
+    "sarvam_fewshot": "match mein india ne twenty eight seven four banaaye.",
+    "sarvam_lora": "Match mein India ne two hundred eighty seven fourth makeaye."
+  },
+  {
+    "id": 22,
+    "category": "temperature-negative",
+    "input": "Shimla mein aaj -3 degree Celsius hai.",
+    "gold": "Shimla mein aaj minus three degree Celsius hai.",
+    "naive": "Shimla mein aaj तीन degree Celsius hai.",
+    "competitive": "Shimla mein aaj -three degree Celsius hai.",
+    "sarvam_fewshot": "Shimla mein aaj three degrees celsius hai.",
+    "sarvam_lora": "Shimla mein aaj three degree Celsius hai."
+  },
+  {
+    "id": 23,
+    "category": "abbrev-multi",
+    "input": "Aaj ki GK class mein PM aur CM dono aaye.",
+    "gold": "Aaj ki jee-kay class mein pee-em aur see-em dono aaye.",
+    "naive": "Aaj ki GK class mein PM aur CM dono aaye.",
+    "competitive": "Aaj ki GK class mein PM aur CM dono aaye.",
+    "sarvam_fewshot": "Aaj ke geek class mein pee-em aur cee-mm dono aaye.",
+    "sarvam_lora": "Aaj ki jee-kay class mein pee-em aur see-em dono aaye."
+  },
+  {
+    "id": 24,
+    "category": "data-units",
+    "input": "Mere phone mein 128 GB storage aur 8 GB RAM hai.",
+    "gold": "Mere phone mein one hundred twenty eight gigabyte storage aur eight gigabyte ram hai.",
+    "naive": "Mere phone mein एक सौ अट्ठाईस GB storage aur आठ GB RAM hai.",
+    "competitive": "Mere phone mein one hundred twenty eight GB storage aur eight GB RAM hai.",
+    "sarvam_fewshot": "my eh-phone has twelve eight geen bytes storage ay-ee-am and eight geen ram ay-ee-am.",
+    "sarvam_lora": "Mere phone mein one hundred twenty eight gigabyte storage aur eight gigabyte ram hai."
+  },
+  {
+    "id": 25,
+    "category": "flight-code",
+    "input": "Flight AI-302 ka boarding gate B7 hai.",
+    "gold": "Flight ay-aai three zero two ka boarding gate bee seven hai.",
+    "naive": "Flight तीन सौ दो ka boarding gate सात hai.",
+    "competitive": "Flight AI-three hundred two ka boarding gate B7 hai.",
+    "sarvam_fewshot": "fligh-ee ee-three oh ka boarding gate be-seven hai.",
+    "sarvam_lora": "Flight ay-aai three zero two ka boarding gate bee seven hai."
+  },
+  {
+    "id": 26,
+    "category": "ordinal-large",
+    "input": "Uska 21st birthday next week hai.",
+    "gold": "Uska twenty first birthday next week hai.",
+    "naive": "Uska इक्कीस birthday next week hai.",
+    "competitive": "Uska twenty onest birthday next week hai.",
+    "sarvam_fewshot": "Uska twenty first birthday next week hai.",
+    "sarvam_lora": "Uska twenty onest birthday next week hai."
+  },
+  {
+    "id": 27,
+    "category": "time-half",
+    "input": "Hum log 2:30 baje milenge cafe par.",
+    "gold": "Hum log two thirty baje milenge cafe par.",
+    "naive": "Hum log दो सौ तीस baje milenge cafe par.",
+    "competitive": "Hum log two thirtybaje milenge cafe par.",
+    "sarvam_fewshot": "hum log do teen hundred baje cafe par meet honge.",
+    "sarvam_lora": "Hum log two thirty ay-bee jee milenge cafe par."
+  },
+  {
+    "id": 28,
+    "category": "currency-paise",
+    "input": "Iska price Rs 99.50 hai bas.",
+    "gold": "Iska price ninety nine rupees fifty paise hai bas.",
+    "naive": "Iska price Rs नौ हज़ार नौ सौ पचास hai bas.",
+    "competitive": "Iska price ninety nine point five zero rupeeshai bas.",
+    "sarvam_fewshot": "iska price nine ninety fivetee dollar bas hai.",
+    "sarvam_lora": "Iska price ninety nine point five rupees hai bas."
+  },
+  {
+    "id": 29,
+    "category": "acronym-gov",
+    "input": "GST aur PAN card ke bina registration nahi hoga.",
+    "gold": "jee-es-tee aur pan card ke bina registration nahi hoga.",
+    "naive": "GST aur PAN card ke bina registration nahi hoga.",
+    "competitive": "GST aur PAN card ke bina registration nahi hoga.",
+    "sarvam_fewshot": "gee-st aai pan card een-hunna registration nahi hoga.",
+    "sarvam_lora": "jee-es-tee aur pan card ke bina registration nahi hoga."
+  },
+  {
+    "id": 30,
+    "category": "big-number",
+    "input": "Stadium mein 1,25,000 log aaye the.",
+    "gold": "Stadium mein one lakh twenty five thousand log aaye the.",
+    "naive": "Stadium mein एक लाख पच्चीस हज़ार log aaye the.",
+    "competitive": "Stadium mein one lakh twenty five thousand log aaye the.",
+    "sarvam_fewshot": "sta-deam mein een-tu-ree-teer doh-taan hazara log aaye the.",
+    "sarvam_lora": "Stadium mein one lakh twenty five thousand log aaye the."
+  },
+  {
+    "id": 31,
+    "category": "math-expr",
+    "input": "Agar 5 + 3 = 8 hota hai toh answer simple hai.",
+    "gold": "Agar five plus three equals eight hota hai toh answer simple hai.",
+    "naive": "Agar पाँच + तीन = आठ hota hai toh answer simple hai.",
+    "competitive": "Agar five + three = eight hota hai toh answer simple hai.",
+    "sarvam_fewshot": "agar fifty plus three is equal to eight hota hai toh answer simple hai.",
+    "sarvam_lora": "Agar five plus three = eight hota hai toh answer simple hai."
+  },
+  {
+    "id": 32,
+    "category": "version",
+    "input": "Naya Android 14 update aa gaya hai.",
+    "gold": "Naya Android fourteen update aa gaya hai.",
+    "naive": "Naya Android चौदह update aa gaya hai.",
+    "competitive": "Naya Android fourteen update aa gaya hai.",
+    "sarvam_fewshot": "new ay-dee-oh one four upgrade ay gay hai.",
+    "sarvam_lora": "Naya Android fourteen update aa gaya hai."
+  },
+  {
+    "id": 33,
+    "category": "time-oclock",
+    "input": "Subah 6 baje uthna padega kal.",
+    "gold": "Subah six baje uthna padega kal.",
+    "naive": "Subah छः baje uthna padega kal.",
+    "competitive": "Subah six baje uthna padega kal.",
+    "sarvam_fewshot": "subah six e-em kelepada kal.",
+    "sarvam_lora": "Subah six baje uthna padega kal."
+  },
+  {
+    "id": 34,
+    "category": "pincode",
+    "input": "Mera pincode 700032 hai, Kolkata ka.",
+    "gold": "Mera pincode seven zero zero zero three two hai, Kolkata ka.",
+    "naive": "Mera pincode सात लाख बत्तीस hai, Kolkata ka.",
+    "competitive": "Mera pincode seven lakh thirty two hai, Kolkata ka.",
+    "sarvam_fewshot": "mera pin-see seven oh zero ek teen do hai, kol-ka-ta ka.",
+    "sarvam_lora": "Mera pee-en-see-oh three two hai, Kolkata ka."
+  },
+  {
+    "id": 35,
+    "category": "percent-decimal",
+    "input": "Loan ka interest 8.75% per annum hai.",
+    "gold": "Loan ka interest eight point seven five percent per annum hai.",
+    "naive": "Loan ka interest आठ सौ पचहत्तर per annum hai.",
+    "competitive": "Loan ka interest eight point seven five percent per annum hai.",
+    "sarvam_fewshot": "loan ka interest eight point seven five percent per year hai.",
+    "sarvam_lora": "Loan ka interest eight point seven five percent per annum hai."
+  },
+  {
+    "id": 36,
+    "category": "acronym-tech",
+    "input": "Mera CPU aur GPU dono overheat ho rahe hain.",
+    "gold": "Mera see-pee-yoo aur jee-pee-yoo dono overheat ho rahe hain.",
+    "naive": "Mera CPU aur GPU dono overheat ho rahe hain.",
+    "competitive": "Mera CPU aur GPU dono overheat ho rahe hain.",
+    "sarvam_fewshot": "My cpu and graphics processor both overheating.",
+    "sarvam_lora": "Mera see-pee-yoo aur jee-pee-yoo dono overheat ho rahe hain."
+  },
+  {
+    "id": 37,
+    "category": "speed-unit",
+    "input": "Gaadi 80 km/h ki speed par thi.",
+    "gold": "Gaadi eighty kilometre per hour ki speed par thi.",
+    "naive": "Gaadi अस्सी km/h ki speed par thi.",
+    "competitive": "Gaadi eighty km/h ki speed par thi.",
+    "sarvam_fewshot": "gaadi eighty keel per hour ki speed par thi.",
+    "sarvam_lora": "jee-aad-aai eighty kilometre per hour ki speed par thi."
+  },
+  {
+    "id": 38,
+    "category": "date-ordinal-month",
+    "input": "Diwali is saal 1st November ko hai.",
+    "gold": "Diwali is saal first November ko hai.",
+    "naive": "Diwali is saal एक November ko hai.",
+    "competitive": "Diwali is saal first November ko hai.",
+    "sarvam_fewshot": "di-ee-vil ees on first ohn ko hai.",
+    "sarvam_lora": "Diwali is saal first November ko hai."
+  },
+  {
+    "id": 39,
+    "category": "id-alphanum-mixed",
+    "input": "Order ID #ORD2024X ready hai pickup ke liye.",
+    "gold": "Order aai-dee oh-aar-dee two zero two four eks ready hai pickup ke liye.",
+    "naive": "Order ID दो हज़ार चौबीस ready hai pickup ke liye.",
+    "competitive": "Order ID #ORD2024X ready hai pickup ke liye.",
+    "sarvam_fewshot": "order id ohr dree ek rayd ready hai pick up ke liye.",
+    "sarvam_lora": "Order ID oh-aar two zero two four x ready hai pickup ke liye."
+  },
+  {
+    "id": 40,
+    "category": "multi-number-context",
+    "input": "10 logon ke liye Rs 2000 ka bill 12:45 PM par aaya.",
+    "gold": "ten logon ke liye two thousand rupees ka bill twelve forty five pee-em par aaya.",
+    "naive": "दस logon ke liye Rs दो हज़ार ka bill एक हज़ार दो सौ पैंतालीस PM par aaya.",
+    "competitive": "ten logon ke liye two thousand rupeeska bill twelve forty five pee-em par aaya.",
+    "sarvam_fewshot": "Ten people's bill is twenty hundred dollars on twelve forty five pm.",
+    "sarvam_lora": "ten logon ke liye twenty thousand rupees ka bill twelve forty five pee-em par aaya."
+  }
+]
